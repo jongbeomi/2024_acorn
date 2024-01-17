@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <!-- 744px 이상은 pc, main.css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen and (min-width:744px)">
+    <!-- 744px 이하는 테블릿, main-1.css -->
+    <link rel="stylesheet" href="css/style_01.css" type="text/css" media="screen and (max-width:744px)">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- nav. -->
+        <nav>
+            <center><h1>music</h1></center>
+            <ul>
+                <li class="nav_li01"><a href="#" class="main1">CHART</a> <!-- 1단계 -->
+                    <ul class="sub">
+                        <li><a href="#" class="a1">신곡 차트</a></li>
+                        <li><a href="#">인기 차트</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_li02"><a href="#" class="main2">MOOD</a> <!-- 1단계 -->
+                    <ul class="sub1">
+                        <li><a href="#" class="a2">발라드</a></li>
+                        <li><a href="#">R&B</a></li>
+                        <li><a href="#">댄스</a></li>
+                        <li><a href="#">랩/힙합</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_li03"><a href="#" class="main3">ARTISTS</a></li> <!-- 1단계 -->
+            </ul>
+            <!-- icon. 돋보기 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="icon">
+                <path d="M18.3333 31.6667C25.6971 31.6667 31.6667 25.6971 31.6667 18.3333C31.6667 10.9695 25.6971 5 18.3333 5C10.9695 5 5 10.9695 5 18.3333C5 25.6971 10.9695 31.6667 18.3333 31.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M35 35L27.8334 27.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </nav>
+        
+        <!-- box01. 최신노래, 슬라이드 이미지, 로그인/회원가입 -->
+        <div class="box01">
+            <div>
+                <h3>최신 노래</h3>
+                <ul> <!-- 최신 노래 -->
+                    <li><a href="#"><img src="#" alt="노래1"></a></li>
+                    <li><a href="#"><img src="#" alt="노래2"></a></li>
+                    <li><a href="#"><img src="#" alt="노래3"></a></li> <br>
+                    <li><a href="#"><img src="#" alt="노래4"></a></li>
+                    <li><a href="#"><img src="#" alt="노래5"></a></li>
+                    <li><a href="#"><img src="#" alt="노래6"></a></li>
+                </ul>
+            </div>
+
+            <div class="cycle-slideshow"> <!-- 슬라이드 이미지 -->
+                <img src="img/sc1-img3.jpg" alt="sc-3" class="img-1">
+                <img src="img/sc1-img2.jpg" alt="sc-2" class="img-2">
+                <img src="img/sc1-img1.jpg" alt="sc-1" class="img-3">
+            </div>
+
+            <div> <!-- 로그인 회원가입 -->
+                
+            </div>
+        </div>
+
+        <!-- box02. 뮤직비디오 -->
+        <div class="box02">
+            <ul>
+                <li><a href="#"><img src="#" alt="뮤비1"></a></li>
+                <li><a href="#"><img src="#" alt="뮤비2"></a></li>
+                <li><a href="#"><img src="#" alt="뮤비3"></a></li>
+                <li><a href="#"><img src="#" alt="뮤비4"></a></li>
+                <li><a href="#"><img src="#" alt="뮤비5"></a></li>
+            </ul>
+        </div>
+
+        <!-- box03. 아티스트, 인기차트 -->
+        <div class="box03">
+            <div><!-- 아티스트 -->
+                <ul class="page1">
+                    <li><a href="#"><img src="#" alt="가수1"></a></li>
+                    <li><a href="#"><img src="#" alt="가수2"></a></li>
+                    <li><a href="#"><img src="#" alt="가수3"></a></li>
+                    <li><a href="#"><img src="#" alt="가수4"></a></li>
+                    <li><a href="#"><img src="#" alt="가수5"></a></li>
+                </ul>
+                <ul class="page2">
+                    <li><a href="#"><img src="#" alt="가수1"></a></li>
+                    <li><a href="#"><img src="#" alt="가수2"></a></li>
+                    <li><a href="#"><img src="#" alt="가수3"></a></li>
+                    <li><a href="#"><img src="#" alt="가수4"></a></li>
+                    <li><a href="#"><img src="#" alt="가수5"></a></li>
+                </ul>
+                <ul class="page3">
+                    <li><a href="#"><img src="#" alt="가수1"></a></li>
+                    <li><a href="#"><img src="#" alt="가수2"></a></li>
+                    <li><a href="#"><img src="#" alt="가수3"></a></li>
+                    <li><a href="#"><img src="#" alt="가수4"></a></li>
+                    <li><a href="#"><img src="#" alt="가수5"></a></li>
+                </ul>
+                <ul class="page4">
+                    <li><a href="#"><img src="#" alt="가수1"></a></li>
+                    <li><a href="#"><img src="#" alt="가수2"></a></li>
+                    <li><a href="#"><img src="#" alt="가수3"></a></li>
+                    <li><a href="#"><img src="#" alt="가수4"></a></li>
+                    <li><a href="#"><img src="#" alt="가수5"></a></li>
+                </ul>
+            </div>
+
+            <div> <!-- 인기 차트 -->
+                <ul>
+                    <li><a href="#"><img src="#" alt="차트1"></a></li>
+                    <li><a href="#"><img src="#" alt="차트2"></a></li>
+                    <li><a href="#"><img src="#" alt="차트3"></a></li>
+                    <li><a href="#"><img src="#" alt="차트4"></a></li>
+                    <li><a href="#"><img src="#" alt="차트5"></a></li>
+                    <li><a href="#"><img src="#" alt="차트6"></a></li>
+                    <li><a href="#"><img src="#" alt="차트7"></a></li>
+                    <li><a href="#"><img src="#" alt="차트8"></a></li>
+                    <li><a href="#"><img src="#" alt="차트9"></a></li>
+                    <li><a href="#"><img src="#" alt="차트10"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            footer
+        </footer>
+    </div>
+
+</body>
+</html>
