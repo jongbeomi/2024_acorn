@@ -1,88 +1,107 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-   
+    
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+    <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <title>Van_Gohe Museum</title>
+
+    <style>
+        #wrap {
+            position: relative;
+            width: 90%;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li class="nav_1">
-                <a href="index.html">Main</a>
-            </li>
-            <li class="nav_2">
-                <a href="../Company.html">Company</a>
-            </li>
-            <li class="nav_3">
-                <a href="../Van.html">Van Gogh</a>
-            </li>
-            <li class="nav_4">
-                <a href="../Paintings.html">Paintings</a>
-            </li>
-            <li class="nav_5">
-                <a href="../Login/Login.html">Log In</a>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="main_1">
-        <div class="main_1_video">
-            <video class="star_video" autoplay muted loop>
-                <source src="../img/video/Star_video.mp4">
+    <div id="wrap">
+        <!-- header -->
+        <header class="header">
+            <nav class="nav">
+                <ul class="gup">
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="Company.html">Company</a></li>
+                    <li><a href="Van.html">Van Gogh</a></li>
+                    <li><a href="Paintings.html">Paintings</a></li>
+                    <li><a href="Login/Login.html">Log In</a></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M28.3333 10.1667H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35 20.1667H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.1667 30H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </header>
+
+        <!-- 메인화면 section -->
+        <section class="title_section">
+            <video class="video_star" autoplay muted loop> 
+                <source src="img/video/Star_video.mp4">
             </video>
 
-            <div class="main_1_text">
-                <h1 class="jemok">Vincent van Gogh Museum</h1>
-            </div>
-        </div>
-    </div>
+            <h1 class="title">Vincent van Gogh Museum</h1>
+        </section>
 
-    <div class="main_2">
-        <video class="Skeleton_video" autoplay muted loop>
-            <source src="/img/video/Skeleton_video.mp4">
-        </video>
-        <div class="main_2_text">
-            <div class="aaa1">
-                <h3 class="sojemok">
-                    <span>1885 Poplars near Nuenen</span> <br>
-                    <span>1885 Still Life with Bible</span> <br>
-                    <span>1887 Self-Portrait</span> <br>
-                    <span>1889 Portrait of Joseph Roulin</span> <br>
-                    <span>1889 The Starry Night</span> <br>
-                    <span>1888 The Bedroom</span> <br>
-                    <span>1889 Sunflowers</span> <br>
-                    <span>1889 Van Gogh's Bedroom in Arles</span> <br>
-                    <span class="jum"> . . . </span>
-                </h3> 
-            </div>
-        </div>
-    </div>
+        <!-- 최근 글 section -->
+        <section class="latest_post_section">
+            <h2 class="title">최근 글</h2>
+            <ul class="latest_post_list">
+                <li><a href="#">빈센트 반 고흐...</a></li>
+                <li><a href="#">반 고흐 침실에 대...</a></li>
+                <li><a href="#">별이 빛나는 밤은...</a></li>
+                <li><a href="#">경 과제 끝 축</a></li>
+                <li><a href="#">다양한 정보를...</a></li>
+            </ul>
+        </section>
 
-    <div class="main_3">
-        <div class="aside">
-            <h3 class="aside_h3">명화 ⧗ 아주 잘 그린 그림</h3>
-            <h6 class="aside_h6">반 고흐의 명화를 온라인으로 만나보세요</h6>   
-        </div>
-        
-        <div class="main_3_button">
-            <h3>Shall we start?</h3>
-            <a href="../Paintings.html"><input class="start_btn" type="button" value="yes"></a> 
-        </div>
-    </div>
+        <!-- 인기 글 section -->
+        <section class="popular">
+            <h2 class="title">인기 글</h2>
+            <ul class="popular_post_list">
+                <li><a href="#">명화 모음집...</a></li>
+                <li><a href="#">반 고흐 생애...</a></li>
+                <li><a href="#">별이 빛나는 밤...</a></li>
+                <li><a href="#">빨리 토요일이...</a></li>
+                <li><a href="#">왔으면 좋겠다...</a></li>
+            </ul>
+        </section>
 
-    <div class="footer">
-        <p>서울 서울구 서울로11길 11 | aaaaa@gmail.com</p>
-        <p>
-            Van Gogh Museum은 개인 작업물입니다. 오류를 방지하기 위해 지속적으로 검토하지만 Van Gogh에 대한 정보, 작품에 대한 해석이 올바르지 않을 수 있습니다. 위 컨텐츠들의 정확성을 보증할 수 없습니다.
-        </p>    
-    </div>
+        <!-- 이미지 슬라이드 -->
+        <section class="cycle-slideshow">
+            <img src="img/담배 피는 해골.jpg" alt="sc-3" class="img-1">
+            <img src="img/자화상.jpg" alt="sc-2" class="img-2">
+            <img src="img/종이에 연필과 수채화.jpg" alt="sc-1" class="img-3">
+        </section>
 
-    
-    <script src="script.js"></script>
+        <section class="art_list_section">
+            <h2 class="title">작품 목록</h2>
+            <ul class="art_list">
+                <li>1885 Poplars near Nuenen</li>
+                <li>1885 Still Life with Bible</li>
+                <li>1887 Self-Portrait</li>
+                <li>1889 Portrait of Joseph Roulin</li>
+                <li>1889 The Starry Night</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>서울 서울구 서울로11길 11 | aaaaa@gmail.com</p>
+            <p>Van Gogh Museum은 개인 작업물입니다. 오류를 방지하기 위해 지속적으로 검토하지만 Van Gogh에 대한 정보, 작품에 대한 해석이 올바르지 않을 수 있습니다. 위 컨텐츠들의 정확성을 보증할 수 없습니다.</p>  
+        </footer>
+    </div>
 </body>
 </html>
