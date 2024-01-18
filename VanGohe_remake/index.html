@@ -19,7 +19,6 @@
         body {
             width: 100%;
             height: auto;
-            background-image: linear-gradient(to bottom, white 30%, black 70%);
         }
         #wrap {
             position: relative;
@@ -37,8 +36,10 @@
 </head>
 <body>
     <div id="wrap">
-        <!-- header -->
+
+        <!-- header. -->
         <header class="header">
+            <!-- nav. -->
             <nav class="nav">
                 <ul class="gup">
                     <li><a href="index.html">Main</a></li>
@@ -48,65 +49,79 @@
                     <li><a href="Login/Login.html">Log In</a></li>
                 </ul>
             </nav>
-            <span class="menu_toggle_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M28.3333 10.1667H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M35 20.1667H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M25.1667 30H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </span>
+
+            <svg class="menu_toggle_btn" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path id="line1" d="M28.3333 10.1667H5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="line2" d="M35 20.1667H5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="line3" d="M25.1667 30H5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>         
         </header>
 
-        <!-- 메인화면 section -->
-        <section class="title_section">
+        <!-- section_01. -->
+        <section class="section_01">
             <video class="video_star" autoplay muted loop> 
                 <source src="img/video/Star_video.mp4">
             </video>
-
-            <h1 class="main_title">Vincent van Gogh Museum</h1>
+            <h1 class="main_title">Vincent Van Gogh Museum</h1>
         </section>
 
-        <!-- 넓이 제한용 -->
-        <div class="container">
-            <section class="cycle">
-                <!-- 이미지 슬라이드 -->
-                <div class="aside">
-                    <h3 class="aside_h3">명화 ⧗ 아주 잘 그린 그림</h3>
-                    <h6 class="aside_h6">움직이는 반 고흐의 작품들을 만나보세요</h6>.</h6>
+            <!-- section_02. -->
+            <section class="section_02">
+                <div>
+                    <p>예술가의 주요 작품</p>
+                    <ul>
+                        <li>별이 빛나는 밤</li>
+                        <li>자화상</li>
+                        <li>침실</li>
+                    </ul>
                 </div>
-                <center>
-                <div class="cycle-slideshow">
-                    <img src="img/sc1-img3.jpg" alt="sc-3">
-                    <img src="img/sc1-img2.jpg" alt="sc-2">
-                    <img src="img/sc1-img1.jpg" alt="sc-1">
+                
+                <div>
+                    <p>전문가의 작품 해설</p>
+                    <table>
+                        <tr>
+                            <td>별이 빛나는 밤</td>
+                            <td>별 갯수가 11개인 이유</td>
+                            <td>브런치</td>
+                        </tr>
+                        <tr>
+                            <td>자화상</td>
+                            <td>고흐에게 귀는 무엇이었을까?</td>
+                            <td>송주영</td>
+                        </tr>
+                        <tr>
+                            <td>해바라기</td>
+                            <td>노란색이 전하는 의미</td>
+                            <td>이머시브</td>
+                        </tr>
+                    </table>
                 </div>
-                </center>
             </section>
 
-            <!-- 작품 section -->
-            <section class="latest">
-                <h2 class="title">Paintings</h2>
-                <center>
-                <ul class="video_zip" title="마우스를 올리면 그림이 움직입니다!">
-                    <li><a href="#"><video src="img/video/clacla.mp4" loop class="vi1"></a></li>
-                    <li><a href="#"><video src="img/video/Star_video.mp4" loop class="vi2"></a></li>
-                    <li><a href="#"><img src="img/펼쳐진 성경과 촛대, 소설책이 있는 정물.jpg" class="vi3"></a></li>
-                </ul>
-                </center>
-            </section> 
-
-            <center>
-            <section class="text">
-                <h3>로그인 후 다양한 서비스를 이용해보세요.</h3>
-                <ul>
-                    <li>전문가의 작품 해석</li>
-                    <li>반 고흐 화가의 이야기</li>
-                    <li>더욱 다양한 작품</li>
-                </ul>
-                <button>Login</button>
+            <!-- section_03. -->
+            <section class="section_03">
+                <img class="movingImage" src="img/loooong.png" alt="">
+                <h1>반 고흐의 명화를 온라인으로 만나보세요.</h1>
+                <img class="movingImage" src="img/loooong2.png" alt="">
             </section>
-            </center>
-        </div>
+
+            <!-- section_04. -->
+            <section class="section_04">
+                
+
+                <p>작품의 스토리</p>
+
+                <div>
+                    <img src="sc1-img1" alt="">
+                </div>
+            </section>
+
+        <!-- section_05. -->
+        <section class="section_05">
+            <h1 class="main_title">Vincent Van Gogh<br> Museum</h1>
+        </section>  
+
+        <!-- footer. -->
         <footer class="footer">
             <p>서울 서울구 서울로11길 11 | aaaaa@gmail.com</p> <br>
             <p>Van Gogh Museum은 개인 작업물입니다. 오류를 방지하기 위해 지속적으로 검토하지만 Van Gogh에 대한 정보, 작품에 대한 해석이 올바르지 않을 수 있습니다. 위 컨텐츠들의 정확성을 보증할 수 없습니다.</p>  
