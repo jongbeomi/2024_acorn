@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
   
@@ -15,15 +14,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
     <title>Van_Gohe Museum</title>
-
+    
     <style>
+        body {
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(to bottom, white 30%, black 70%);
+        }
         #wrap {
             position: relative;
+            width: 100%;
+        }
+        .container {
             width: 90%;
+            margin: 0 auto;
         }
     </style>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jquery 라이브러리 -->
+<script src="js/script.js"></script>
+<script src="js/jquery.cycle.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -40,9 +50,9 @@
             </nav>
             <span class="menu_toggle_btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <path d="M28.3333 10.1667H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M35 20.1667H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M25.1667 30H5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.3333 10.1667H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35 20.1667H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.1667 30H5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </span>
         </header>
@@ -53,55 +63,55 @@
                 <source src="img/video/Star_video.mp4">
             </video>
 
-            <h1 class="title">Vincent van Gogh Museum</h1>
+            <h1 class="main_title">Vincent van Gogh Museum</h1>
         </section>
 
-        <!-- 최근 글 section -->
-        <section class="latest_post_section">
-            <h2 class="title">최근 글</h2>
-            <ul class="latest_post_list">
-                <li><a href="#">빈센트 반 고흐...</a></li>
-                <li><a href="#">반 고흐 침실에 대...</a></li>
-                <li><a href="#">별이 빛나는 밤은...</a></li>
-                <li><a href="#">경 과제 끝 축</a></li>
-                <li><a href="#">다양한 정보를...</a></li>
-            </ul>
-        </section>
+        <!-- 넓이 제한용 -->
+        <div class="container">
+            <section class="cycle">
+                <!-- 이미지 슬라이드 -->
+                <div class="aside">
+                    <h3 class="aside_h3">명화 ⧗ 아주 잘 그린 그림</h3>
+                    <h6 class="aside_h6">움직이는 반 고흐의 작품들을 만나보세요</h6>.</h6>
+                </div>
+                <center>
+                <div class="cycle-slideshow">
+                    <img src="img/sc1-img3.jpg" alt="sc-3">
+                    <img src="img/sc1-img2.jpg" alt="sc-2">
+                    <img src="img/sc1-img1.jpg" alt="sc-1">
+                </div>
+                </center>
+            </section>
 
-        <!-- 인기 글 section -->
-        <section class="popular">
-            <h2 class="title">인기 글</h2>
-            <ul class="popular_post_list">
-                <li><a href="#">명화 모음집...</a></li>
-                <li><a href="#">반 고흐 생애...</a></li>
-                <li><a href="#">별이 빛나는 밤...</a></li>
-                <li><a href="#">빨리 토요일이...</a></li>
-                <li><a href="#">왔으면 좋겠다...</a></li>
-            </ul>
-        </section>
+            <!-- 작품 section -->
+            <section class="latest">
+                <h2 class="title">Paintings</h2>
+                <center>
+                <ul class="video_zip" title="마우스를 올리면 그림이 움직입니다!">
+                    <li><a href="#"><video src="img/video/clacla.mp4" loop class="vi1"></a></li>
+                    <li><a href="#"><video src="img/video/Star_video.mp4" loop class="vi2"></a></li>
+                    <li><a href="#"><img src="img/펼쳐진 성경과 촛대, 소설책이 있는 정물.jpg" class="vi3"></a></li>
+                </ul>
+                </center>
+            </section> 
 
-        <!-- 이미지 슬라이드 -->
-        <section class="cycle-slideshow">
-            <img src="img/담배 피는 해골.jpg" alt="sc-3" class="img-1">
-            <img src="img/자화상.jpg" alt="sc-2" class="img-2">
-            <img src="img/종이에 연필과 수채화.jpg" alt="sc-1" class="img-3">
-        </section>
-
-        <section class="art_list_section">
-            <h2 class="title">작품 목록</h2>
-            <ul class="art_list">
-                <li>1885 Poplars near Nuenen</li>
-                <li>1885 Still Life with Bible</li>
-                <li>1887 Self-Portrait</li>
-                <li>1889 Portrait of Joseph Roulin</li>
-                <li>1889 The Starry Night</li>
-            </ul>
-        </section>
-
+            <center>
+            <section class="text">
+                <h3>로그인 후 다양한 서비스를 이용해보세요.</h3>
+                <ul>
+                    <li>전문가의 작품 해석</li>
+                    <li>반 고흐 화가의 이야기</li>
+                    <li>더욱 다양한 작품</li>
+                </ul>
+                <button>Login</button>
+            </section>
+            </center>
+        </div>
         <footer class="footer">
-            <p>서울 서울구 서울로11길 11 | aaaaa@gmail.com</p>
+            <p>서울 서울구 서울로11길 11 | aaaaa@gmail.com</p> <br>
             <p>Van Gogh Museum은 개인 작업물입니다. 오류를 방지하기 위해 지속적으로 검토하지만 Van Gogh에 대한 정보, 작품에 대한 해석이 올바르지 않을 수 있습니다. 위 컨텐츠들의 정확성을 보증할 수 없습니다.</p>  
         </footer>
     </div>
+    
 </body>
 </html>

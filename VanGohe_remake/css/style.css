@@ -1,10 +1,23 @@
 /* tablet */
+
+/* header */
 .header {
     display: flex;
     order: 1;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 110%;
+    height: 50px;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
 }
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.header:hover svg > path {
+    stroke: black;
+}
+
 .nav {
     order: 2;
     width: 100%;
@@ -14,7 +27,8 @@
 }
 .gup li {
     display: flex;
-    background-color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 1);
 }
 .gup li a {
     width: 80%;
@@ -24,19 +38,208 @@
     font-weight: bold;
     text-transform: uppercase; /* 대문자 변형 */
 }   
+.gup li a:hover {
+   text-decoration: underline;
+}
 .menu_toggle_btn {
     display: block;
     width: 30px;
     height: 30px;
-    top: 10px;
-    right: 10px;
+    margin: 3px 0 0 5px;
     cursor: pointer;
 }
 
+
+/* 메인화면 section */
+.title_section {
+    position: relative;
+    display: flex;
+}
+.video_star {
+    position: static;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+.main_title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 7vw;
+    white-space : nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    color: #fff;
+    position: absolute;
+}
+
+/* .latest 작품들 */
+.latest {
+    margin-top: 50px;
+    background-color: beige;
+    margin-bottom: 50px ;
+}
+.popular {
+    background-color: beige;
+}
+.latest, .popular {
+    padding: 40px 12.5%;
+}
+.title {
+    margin-bottom: 30px;
+    font-size: 1.688rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.popular_post_list li {
+    margin-top: 15px;
+    padding-left: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.popular_post_list li:first-child {
+    margin-top: 0px;
+}
+
+
+/* painting */
+.vi1, .vi2, .vi3 { 
+    position: relative;
+    width: 90%;
+    transition: 0.2s;
+}
+.vi1:hover, .vi2:hover, .vi3:hover {
+    width: 100%;
+}
+
+/* cycle-slideshow */
+.cycle-slideshow {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.cycle-slideshow img {
+    width: 265px;
+    height: 350px;
+}
+.aside_h3 {
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aside {
+    margin-top: 9vw;
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.aside_h6 {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aside.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.text > h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 140px 30px 50px 30px;
+    font-size: 4vw;
+    color: white;
+}
+.text li {
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 60px;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+.text li:first-child {
+    margin-top: 60px;
+}
+
+.text li:hover {
+    background-color: #fff;
+    color: rgb(26, 26, 26);
+}
+
+.text button {
+    padding: 15px 60px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase; /* 대문자 변형 */
+}
+ .text button:hover {
+    cursor: pointer;
+ }
+.footer {
+    background-color: grey;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
+
+
+
 /* pc */
 @media all and (min-width:768px) {
-* {
-    background-color: black;}
+    svg {display: none;}
+    .nav {
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        transition: background-color 0.2s;
+    }
+      
+    .nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .nav a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+        transition: color 0.2s;
+    }
+    .nav li {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        width: 20%;
+        left: 50px;
+    }
+    .nav:hover {
+        background-color: rgba(255, 255, 255);
+    }
+    .nav:hover a{
+        color: gray;
+    }
+    .nav a:hover {
+        color: black;
+    }
+    
 
 }
 
