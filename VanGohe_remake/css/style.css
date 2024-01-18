@@ -1,7 +1,7 @@
 /* tablet */
-
+.header {display: none;}
 /* header. nav.*/
-.header {
+.header_1 {
     display: flex;
     position: absolute;
     text-align: left;
@@ -9,17 +9,17 @@
     height: 50px;
     transition: 0.2s;
 }
-.header > .nav {
+.header_1 > .nav_1 {
     width: 100%;
 }
-.header > .nav > .gup {
+.header_1 > .nav_1 > .gup_1 {
     display: none;
 }
-.header > .nav > .gup > li {
+.header_1 > .nav_1 > .gup_1 > li {
     display: flex;
     background-color: white;
 }
-.header > .nav > .gup > li > a {
+.header_1 > .nav_1 > .gup_1 > li > a {
     padding: 20px 0;
     font-size: 17px;
     font-weight: bold;
@@ -28,12 +28,12 @@
     text-transform: capitalize;
     z-index: 20;
 }
-.header > .nav > .gup > li > a:hover {
+.header_1 > .nav_1 > .gup_1 > li > a:hover {
     text-decoration: underline;
     color: black;
     cursor: pointer;
 }
-.header svg {
+.header_1 svg {
     position: absolute;
     display: block;
     right: 10px;
@@ -69,9 +69,69 @@
     position: absolute;
 }
 
+
+
 /* section_02. */
 .section_02 {
+    padding: 120px 0;
+    background-color: aliceblue;
 }
+.list, .table {
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: white;
+}
+.list {
+    margin-bottom: 30px;
+}
+.section_02 p {
+    position: relative;
+    top: 10px;
+    left: 10px;    
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+.list li {
+    font-size: 19px;
+    text-indent: 20px;
+    margin: 30px 0 0 0;
+}
+.list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.list li:first-child {
+    margin-top: 30px;
+}
+.section_02 img {
+    width: 40px;
+    position: relative;
+    top: 18px;
+    left: 15px;
+}
+.table table {
+    padding: 30px;
+    width: 80%;
+}
+.table tr td{
+    padding: 10px 0; 
+}
+.table th {
+    width: 150px;
+    text-align: left;
+}
+
+.table td:hover {
+    cursor: pointer;
+    color: rgb(151, 151, 172);
+    text-decoration: underline;
+}
+
+
+
 
 /* section_03. */
 .section_03 {
@@ -79,6 +139,8 @@
     width: 100%;
     height: 700px;
     background-color: white;
+    
+    overflow: hidden;
 }
 .section_03 img {
     filter: blur(3px);
@@ -87,7 +149,7 @@
 .movingImage {
     animation: moveRight 20s infinite;
   }
-.section_03 h1 {
+.section_03 h1, .section_04 h1 {
     height: 33%;
     font-weight: bold;
     font-size: 32px;
@@ -96,7 +158,6 @@
     color: #000;
     position: relative;
 }
-
 @keyframes moveRight {
     from {
         transform: translateX(0);
@@ -108,16 +169,26 @@
 
 
 
-
 /* section_04. */
 .section_04 {
     position: relative;
     width: 100%;
     height: 524px;
-
-    text-align: center;
-    background-color: seagreen;
+    background-color: aliceblue;
+    padding-bottom: 100px;
 }
+.cycle-slideshow {
+    width: 250px;
+    position: relative;
+}
+.cycle-slideshow img {
+    width: 250px;
+    height: 350px;    
+}
+
+
+
+
 
 /* section_05. */
 .section_05 {
@@ -134,6 +205,9 @@
     font-weight: 900;
     font-size: 75px;
 }
+
+
+
 /* footer. */
 .footer {
     background-color: grey;
@@ -141,8 +215,96 @@
     padding: 50px;
 }
 
-@media all and (min-width:768px) {
-#wrap {
-    background-color: red;
+
+
+@media all and (min-width:900px) {
+
+    .header_1 {display: none;}
+
+    .header {display: block;}
+
+    .nav {
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        transition: background-color 0.2s;
+    }
+      
+    .nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .nav a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+        transition: color 0.2s;
+    }
+    .nav li {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        width: 20%;
+        text-align: center;
+        
+        top: 12px;
+    }
+    .nav:hover {
+        background-color: rgba(255, 255, 255);
+    }
+    .nav:hover a{
+        color: gray;
+    }
+    .nav a:hover {
+        color: black;
+    }
+
+
+.section_02 {
+    position: relative;
+    width: 100%;
+    height: 790px;
+    order: 1;
+}
+
+.list {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 50%;
+}
+.table {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    width: 50%;
+}
+
+.section_04 {
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    order: 2;
+    position: relative;
+    border-radius: 30px;
+    height: 580px;
+    top: -1420px;
+    right: -60%;
+}
+
+.section_03 {
+    padding-bottom: 0;
+}
+.section_05 {
+    position: relative;
+    top: -275px;
+
+    margin-top: -200px;
+    margin-bottom: -200px;
+}
+.main_title {
+    font-size: 90px;
 }
 }
